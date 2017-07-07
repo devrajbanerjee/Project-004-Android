@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.devra.attendanceapp.ReportAbsentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textAbsent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reporting Absence"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_absent"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonAbsSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sick Leave"
+                android:textColor="@color/textColor"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonAbsEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Personal / Family Emergency"
+                android:textColor="@color/textColor"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonAbsPlanned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Planned Vacation"
+                android:textColor="@color/textColor"/>
+            <RadioButton
+                android:id="@+id/radioButtonAbsMaternity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Maternity Leave"
+                android:textColor="@color/textColor"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonAbsentStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Absent From" />
+
+        <EditText
+            android:id="@+id/editTextDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/textColor"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="20dp"
+            android:hint="Number of days"/>
+
+        <Button
+            android:id="@+id/buttonAbsentSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

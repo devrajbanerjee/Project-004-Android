@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.devra.attendanceapp.ReportPresentActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textPresent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark Present"
+            android:textSize="28dp"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/buttonPresentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm by email"
+            android:onClick="process"/>
+
+        <Button
+            android:id="@+id/buttonPresentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm by Text"
+            android:onClick="process"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
